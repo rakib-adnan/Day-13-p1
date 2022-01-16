@@ -1,0 +1,147 @@
+@font-face {
+  font-family: custom-font;
+  src: url(./font/Orloj-Ea9eW.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 65.5%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  height: 50rem;
+  width: 50rem;
+  position: relative;
+  background-image: url(./img/istockphoto-685003650-612x612.jpg),
+    linear-gradient(to right, #56ab2f, #a8e063);
+  text-shadow: rgba(240, 46, 170, 0.4) -5px 5px;
+  background-size: cover;
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+}
+
+.hours {
+  font-family: custom-font;
+  font-size: 5rem;
+}
+.minutes {
+  font-size: 5rem;
+}
+.second {
+  font-size: 2rem;
+}
+
+.content {
+  font-family: custom-font;
+  position: absolute;
+  color: rgb(252, 7, 7);
+  font-weight: bold;
+
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.ampm {
+  position: absolute;
+  top: 52%;
+  left: 44%;
+  font-size: 4rem;
+  font-family: custom-font;
+  color: rgb(252, 7, 7);
+  font-weight: bold;
+}
+.date {
+  position: absolute;
+  top: 66%;
+  left: 38%;
+  color: #1b1464;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: #4854608f -3px 3px;
+}
+
+@media (max-width: 520px) {
+  .container {
+    height: 30rem;
+    width: 30rem;
+  }
+  .hours {
+    font-family: custom-font;
+    font-size: 3rem;
+  }
+  .minutes {
+    font-size: 3rem;
+  }
+  .second {
+    font-size: 1rem;
+  }
+  .ampm {
+    font-size: 2rem;
+  }
+  .date {
+    font-size: 2rem;
+    top: 65%;
+    left: 35%;
+  }
+}
+@media (max-width: 310px) {
+    .container {
+      height: 20rem;
+      width: 20rem;
+    }
+    .hours {
+      font-family: custom-font;
+      font-size: 2rem;
+    }
+    .minutes {
+      font-size: 2rem;
+    }
+    .second {
+      font-size: 1rem;
+    }
+    .ampm {
+      font-size: 1.2rem;
+    }
+    .date {
+      font-size: 1.3rem;
+      top: 65%;
+      left: 35%;
+    }
+  }
+
+  @media (max-width: 210px) {
+    .container {
+      height: 15rem;
+      width: 15rem;
+    }
+    .hours {
+      font-family: custom-font;
+      font-size: 1.2rem;
+    }
+    .minutes {
+      font-size: 1.2rem;
+    }
+    .second {
+      font-size: .8rem;
+    }
+    .ampm {
+      font-size: 1rem;
+    }
+    .date {
+      font-size: 1rem;
+      top: 65%;
+      left: 35%;
+    }
+  }
